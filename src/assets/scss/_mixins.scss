@@ -1,0 +1,36 @@
+@mixin maxW_1536 {
+  @media (max-width: 1536px) {
+    @content;
+  }
+}
+
+@mixin maxW_1200 {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin maxW_992 {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+
+@mixin minW_768 {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin minW_600 {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin displayFlex($horizontal-position: initial, $vertical-position: initial, $flex-direction: initial) {
+  display: flex;
+  justify-content: $horizontal-position;
+  align-items: $vertical-position;
+  flex-direction: $flex-direction;
+}
