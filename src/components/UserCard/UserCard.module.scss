@@ -1,0 +1,39 @@
+@import 'assets/scss/mixins';
+
+.userCard {
+  width: 30%;
+  @include displayFlex(center, null, column);
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px 0 #282745;
+  gap: 10px;
+
+  &__header {
+    @include displayFlex(center, center, null);
+  }
+
+  &__item {
+    padding: 10px 20px;
+
+    &_block {
+      margin: 10px 20px;
+      @include displayFlex(center, null, column);
+      gap: 5px;
+    }
+  }
+
+  span, a {
+    font-weight: 600;
+  }
+
+  &__btn {
+    margin: 10px 20px 20px;
+    padding: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}

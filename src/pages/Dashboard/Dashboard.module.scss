@@ -1,0 +1,52 @@
+@import 'assets/scss/mixins';
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dashboard {
+  width: 100%;
+  @include displayFlex(null, center, column);
+
+  &__table {
+    background: #fff;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px 0 #282745;
+
+    &__header {
+        background: #0f0c29;
+        background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+        color: #fff;
+        border-radius: 8px 8px 0 0;
+        padding: 15px 15px;
+        @include displayFlex(space-between, center, row);
+
+        :nth-child(1) {
+            width: 5%;
+        }
+        :nth-child(2) {
+            width: 17%;
+        }
+        :nth-child(3) {
+            width: 17%;
+        }
+        :nth-child(4) {
+            width: 20%;
+        }
+        :nth-child(5) {
+            width: 20%;
+        }
+        :nth-child(6) {
+          width: 11%;
+        }
+        :nth-child(7) {
+            width: 10%;
+        }
+    }
+  }
+}

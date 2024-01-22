@@ -1,12 +1,18 @@
-import React from 'react';
-import './App.scss';
+import React, { FC } from 'react';
+import { Route, Routes } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
+import { ROUTES } from 'core/constants/routes';
 
-    </div>
-  );
-}
+import Dashboard from 'pages/Dashboard/Dashboard';
+import UserDetails from 'pages/UserDetails/UserDetails';
+
+const App: FC = () => {
+	return (
+		<Routes>
+			<Route path={ROUTES.DASHBOARD} element={<Dashboard />} />
+			<Route path={ROUTES.USER_DETAILS} element={<UserDetails />} />
+		</Routes>
+	);
+};
 
 export default App;
