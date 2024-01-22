@@ -1,0 +1,15 @@
+@import 'assets/scss/mixins';
+
+.Avatar {
+  @include displayFlex(center, center, column);
+
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+  color: #fff;
+
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}

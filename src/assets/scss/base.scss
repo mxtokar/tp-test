@@ -1,11 +1,9 @@
-@import 'assets/scss/variables';
-@import 'assets/scss/mixins';
+@import 'variables';
+@import 'mixins';
 
 body {
   padding: 0;
   margin: 0;
-  height: 100vh;
-  background-color: $main-white;
   font-family: "Inter", sans-serif;
 
   @include displayFlex(null, center, column);
@@ -19,4 +17,15 @@ body {
     color: $main-link;
     cursor: pointer;
   }
+
+  background: #44A08D;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
+
+#root {
+  box-sizing: border-box;
+  width: 100%;
+}
+

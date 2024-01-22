@@ -1,0 +1,37 @@
+@import 'assets/scss/mixins';
+
+.userItem{
+  @include displayFlex(space-between, center, row);
+  padding: 15px 15px;
+
+  > :nth-child(1) {
+    width: 5%;
+  }
+  :nth-child(2) {
+    width: 17%;
+    font-weight: 700;
+  }
+  :nth-child(3) {
+    width: 17%;
+  }
+  :nth-child(4) {
+    width: 20%;
+  }
+  :nth-child(5) {
+    width: 20%;
+  }
+  :nth-child(6) {
+    width: 11%;
+    font-weight: 500;
+  }
+  :nth-child(7) {
+    width: 10%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}

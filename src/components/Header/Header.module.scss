@@ -1,0 +1,6 @@
+@import 'assets/scss/mixins';
+
+.header {
+  width: 100%;
+  @include displayFlex(center, null, null);
+}
